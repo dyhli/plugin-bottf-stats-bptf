@@ -8,7 +8,7 @@
 // @downloadURL     https://github.com/dyhli/plugin-bottf-stats-bptf/raw/master/bottf_stats_bptf.user.js
 // @updateURL       https://github.com/dyhli/plugin-bottf-stats-bptf/raw/master/bottf_stats_bptf.user.js
 
-// @version         0.2
+// @version         0.3
 // @author          Yuan Hao "Danny" Li <danny@exploriment.io>
 
 // @match           https://backpack.tf/stats/*
@@ -21,7 +21,11 @@
 (function($) {
     'use strict';
 
-    const Item = $('.stats-header-item .item, .history-sheet .item-list .item, .suggestion .item');
+    let Item = $('.stats-header-item .item');
+    if (Item.length === 0)
+    {
+        Item = $('.history-sheet .item-list .item, .suggestion .item');
+    }
 
     if (Item.length === 1)
     {
