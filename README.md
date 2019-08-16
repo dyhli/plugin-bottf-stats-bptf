@@ -19,6 +19,9 @@ This user script integrates Bot.tf stats with the backpack.tf website.
 #### Classifieds page
 ![Classifieds page](https://i.imgur.com/llaEGLF.png)
 
+#### Price suggestion page
+![Price suggestion page](https://i.imgur.com/RsIVrax.png)
+
 ### Disclaimer
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,

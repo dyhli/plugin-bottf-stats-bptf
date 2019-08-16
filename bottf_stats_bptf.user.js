@@ -8,11 +8,12 @@
 // @downloadURL     https://github.com/dyhli/plugin-bottf-stats-bptf/raw/master/bottf_stats_bptf.user.js
 // @updateURL       https://github.com/dyhli/plugin-bottf-stats-bptf/raw/master/bottf_stats_bptf.user.js
 
-// @version         0.1
+// @version         0.2
 // @author          Yuan Hao "Danny" Li <danny@exploriment.io>
 
 // @match           https://backpack.tf/stats/*
 // @match           https://backpack.tf/item/*
+// @match           https://backpack.tf/suggestion/*
 // @run-at          document-end
 // @grant           none
 // ==/UserScript==
@@ -20,9 +21,9 @@
 (function($) {
     'use strict';
 
-    const Item = $('.stats-header-item .item, .history-sheet .item-list .item');
+    const Item = $('.stats-header-item .item, .history-sheet .item-list .item, .suggestion .item');
 
-    if (Item.length > 0)
+    if (Item.length === 1)
     {
         const ItemData = {
             def: Item.data('defindex'),
@@ -49,7 +50,7 @@
             <a class="btn btn-default" href="${generateSnapshotLink(ItemData)}" target="_blank"><i class="fa fa-history fa-fw"></i> Bot.tf snapshots</a>
             <a class="btn btn-default" href="${generateStatsLink(ItemData)}" target="_blank"><i class="fa fa-bar-chart fa-fw"></i> Bot.tf stats</a>
         `);
-        $('.panel-extras').append(`
+        $('.panel:first .panel-extras').append(`
             <a class="btn btn-panel" href="${generateSnapshotLink(ItemData)}" target="_blank"><i class="fa fa-history fa-fw"></i> Bot.tf snapshots</a>
             <a class="btn btn-panel" href="${generateStatsLink(ItemData)}" target="_blank"><i class="fa fa-bar-chart fa-fw"></i> Bot.tf stats</a>
         `);
