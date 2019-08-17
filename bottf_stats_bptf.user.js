@@ -3,14 +3,14 @@
 // @namespace       https://bot.tf
 // @description     This user script integrates Bot.tf stats with the backpack.tf website
 
-// @require       https://code.jquery.com/jquery-3.4.1.slim.min.js
+// @require         https://code.jquery.com/jquery-3.4.1.slim.min.js
 
 // @homepageURL     https://github.com/dyhli/plugin-bottf-stats-bptf
 // @supportURL      https://github.com/dyhli/plugin-bottf-stats-bptf/issues
 // @downloadURL     https://github.com/dyhli/plugin-bottf-stats-bptf/raw/master/bottf_stats_bptf.user.js
 // @updateURL       https://github.com/dyhli/plugin-bottf-stats-bptf/raw/master/bottf_stats_bptf.user.js
 
-// @version         0.3
+// @version         0.4
 // @author          Yuan Hao "Danny" Li <danny@exploriment.io>
 
 // @match           https://backpack.tf/stats/*
