@@ -3,6 +3,8 @@
 // @namespace       https://bot.tf
 // @description     This user script integrates Bot.tf stats with the backpack.tf website
 
+// @require       https://code.jquery.com/jquery-3.4.1.slim.min.js
+
 // @homepageURL     https://github.com/dyhli/plugin-bottf-stats-bptf
 // @supportURL      https://github.com/dyhli/plugin-bottf-stats-bptf/issues
 // @downloadURL     https://github.com/dyhli/plugin-bottf-stats-bptf/raw/master/bottf_stats_bptf.user.js
